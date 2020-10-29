@@ -21,18 +21,14 @@
               <li><a href="/blogs/create">New Blogs</a></li>
           </ul>
       </nav>
-
-      <div class = "blogs content">
-        <h2>All Blogs</h2>
-        <% if (blogs.length > 0) { %>
-         <% blogs.forEach(blog => { %>
-          <h3 class="title"><%= blog.title %> </h3>
-          <p class="snippet"><%= blog.snippet %> </p>
-         <% }) %>
-          
-        <% } %>
-
-      </div>
+      
+      <div class = "about content">
+        <h2>About US</h2>
+        <%= name %> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, asperiores? Ipsum quas, voluptate facilis possimus sit quam, deleniti accusamus, repellat dolorum cumque at atque expedita ut illo odit nemo harum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, asperiores? Ipsum quas, voluptate facilis possimus sit quam, deleniti accusamus, repellat dolorum cumque at atque expedita ut illo odit nemo harum!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, asperiores? Ipsum quas, voluptate facilis possimus sit quam, deleniti accusamus, repellat dolorum cumque at atque expedita ut illo odit nemo harum!</p>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

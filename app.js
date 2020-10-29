@@ -13,10 +13,29 @@ app.listen(3000);
 
 app.get('/',(req,res)=>{
 
-    res.sendFile('./views/index.html',{root:__dirname});
+  blogs = [
+    {title:"ABC",snippet:"qwoieufsdmfkls ijrweoi wejksdfl wefwef"},
+    {title:"SDJE",snippet:"qwoieufsdmfkls ijrweoi wejksdfl wefwef"},
+    {title:"ASKD",snippet:"qwoieufsdmfkls ijrweoi wejksdfl wefwef"}
+  ];
+  res.render('index',blogs); 
+
 });
+
+
+app.get('/about',(req,res)=>{
+
+    res.render('about',{name:'HS'}); 
+  
+  });
+
+  app.get('/blogs/create',(req,res)=>{
+
+    res.render('create'); 
+    
+  });
 
 //handling 404s
 app.use( (req,res) => {
-    res.status(404).sendFile('./views/404.html',{root:__dirname});
+    res.status(404).render('404');
 });

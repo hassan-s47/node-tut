@@ -22,16 +22,15 @@
           </ul>
       </nav>
 
-      <div class = "blogs content">
-        <h2>All Blogs</h2>
-        <% if (blogs.length > 0) { %>
-         <% blogs.forEach(blog => { %>
-          <h3 class="title"><%= blog.title %> </h3>
-          <p class="snippet"><%= blog.snippet %> </p>
-         <% }) %>
-          
-        <% } %>
-
+      <div class = "create-blog content">
+       <form action=""></form>
+        <label for="title">Blog title:</label>
+        <input type="text" name="" id="title" required><br>
+        <label for="snippet">Snippet</label>
+        <input type="text" name="" id="snippet" required> <br>
+        <label for="body">Body</label>
+        <textarea id="body" required></textarea><br>
+        <button>Submit</button>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
